@@ -1,0 +1,121 @@
+.article {
+  background-color: #f2f2f2;
+}
+.article__inner {
+  padding: 80px 0 80px 0;
+}
+.article__title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.7;
+  color: #2d314d;
+  margin-bottom: 8px;
+}
+.article__text {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597a5;
+}
+.article__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.article__item {
+  max-width: 255px;
+  background-color: #fff;
+  text-align: start;
+  list-style: none;
+}
+.latest {
+  text-decoration: none;
+}
+.latest__inner {
+  padding: 24px;
+  max-width: 207px;
+}
+.latest__span {
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.15625px;
+  color: #9597a5;
+}
+.latest__title {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.285714px;
+  color: #2d314d;
+}
+.latest__title:hover {
+  color: #30c88f;
+}
+.latest__text {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.203125px;
+  color: #9597a5;
+}
+.latest__text:hover {
+  color: #30c88f;
+}
+@media only screen and (max-width: 1100px) {
+  .article__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px 0 40px;
+  }
+  .article__item {
+    margin: 10px;
+    // text-align: center;
+  }
+
+  .article__inner {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .article__item {
+    width: 316px;
+    margin-bottom: 24px;
+  }
+  .article__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    // padding: 0 40px 0 40px;
+  }
+  .article__title {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .article__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .article__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .article__title {
+    font-size: 30px;
+    line-height: 20px;
+  }
+  .article__text {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+  }
+}
